@@ -5,10 +5,16 @@ var GCLOUD = NewDnsProvider('gcloud', 'GCLOUD')
 
 D('mhnet.ch', REG_NONE, DnsProvider(GCLOUD),
   {'ns_ttl': '21600'},
-     A('master0', '94.130.184.104'),
-  AAAA('master0', '2a01:4f8:1c0c:445f::'),
-     A('node0', '195.201.21.131'),
-  AAAA('node0', '2a01:4f8:1c0c:4d8e::'),
-     A('node1', '195.201.21.132'),
-  AAAA('node1', '2a01:4f8:1c0c:4d8f::')
+     A('controller-0', '88.99.12.218'),
+  AAAA('controller-0', '2a01:4f8:1c17:5197::'),
+     A('controller-1', '78.47.89.155'),
+  AAAA('controller-1', '2a01:4f8:1c17:46e4::'),
+     A('controller-2', '78.47.109.131'),
+  AAAA('controller-2', '2a01:4f8:1c17:4ab1::'),
+     A('worker-0', '88.99.12.227'),
+  AAAA('worker-0', '2a01:4f8:1c17:4cfd::'),
+     A('worker-1', '78.47.89.156'),
+  AAAA('worker-1', '2a01:4f8:1c17:48aa::'),
+     A('worker-2', '78.47.109.129'),
+  AAAA('worker-2', '2a01:4f8:1c17:4987::')
 )
