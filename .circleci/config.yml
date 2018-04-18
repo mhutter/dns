@@ -1,0 +1,39 @@
+---
+version: 2
+
+
+jobs:
+  check:
+    docker: &dnscontrol
+      - image: stackexchange/dnscontrol
+    steps:
+      - checkout
+      - run: dnscontrol check
+
+  preview:
+    docker: *dnscontrol
+    steps:
+      - checkout
+      - run: echo "$CREDS" | base64 -d > creds.json
+      - run: dnscontrol preview
+
+  deploy:
+    docker: *dnscontrol
+    steps:
+      - checkout
+      - run: echo "$CREDS" | base64 -d > creds.json
+      - run: dnscontrol push
+
+workflows:
+  version: 2
+  check-preview-deploy:
+    jobs:
+      - check
+      - preview
+      - deploy:
+          requires:
+            - check
+            - preview
+          filters:
+            branches:
+              only: master
