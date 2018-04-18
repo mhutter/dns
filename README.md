@@ -1,4 +1,4 @@
-# domains
+# DNS
 
 Domains managed by [dnscontrol].
 
