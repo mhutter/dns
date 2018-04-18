@@ -14,12 +14,14 @@ jobs:
     docker: *dnscontrol
     steps:
       - checkout
+      - run: echo "$CREDS" | base64 -d > creds.json
       - run: dnscontrol preview
 
   deploy:
     docker: *dnscontrol
     steps:
       - checkout
+      - run: echo "$CREDS" | base64 -d > creds.json
       - run: dnscontrol push
 
 workflows:
