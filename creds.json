@@ -1,0 +1,8 @@
+{
+  "gcloud": {
+    "type": "service_account",
+    "project_id": "$GCLOUD_PROJECT_ID",
+    "private_key": "$GCLOUD_PRIVATE_KEY",
+    "client_email": "$GCLOUD_CLIENT_EMAIL"
+  }
+}
