@@ -1,4 +1,4 @@
-/* global NewRegistrar, NewDnsProvider, DnsProvider, D, A, AAAA */
+/* global NewRegistrar, NewDnsProvider, DnsProvider, D, A, AAAA, CNAME */
 
 var REG_NONE = NewRegistrar('none', 'NONE')
 var GCLOUD = NewDnsProvider('gcloud', 'GCLOUD')
