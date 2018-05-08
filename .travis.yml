@@ -1,0 +1,20 @@
+---
+language: go
+
+install:
+  - go get github.com/StackExchange/dnscontrol
+  - echo "$CREDS" | base64 -d > creds.json
+
+script: dnscontrol $STEP
+
+jobs:
+  include:
+    - env: STEP=check
+    - env: STEP=preview
+    - stage: deploy
+      env: STEP=push
+
+stages:
+  - test
+  - name: deploy
+    if: branch = master AND type != pull_request
