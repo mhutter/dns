@@ -32,6 +32,21 @@ D('izibizi.ch', REG_NONE, DnsProvider(GCLOUD),
   TXT('@', 'google-site-verification=eYM9ojHKqusz8D0WER2qcnMnqtuRTKg_J-9ePcDy_f4')
 )
 
+D('mhnet.ch', REG_NONE, DnsProvider(GCLOUD),
+     A('controller-0', '138.201.186.248'),
+  AAAA('controller-0', '2a01:4f8:1c17:5f5b::1'),
+     A('controller-1', '138.201.184.11'),
+  AAAA('controller-1', '2a01:4f8:1c17:61a1::1'),
+     A('controller-2', '138.201.91.37'),
+  AAAA('controller-2', '2a01:4f8:1c17:61a0::1'),
+     A('worker-0', '138.201.117.204'),
+  AAAA('worker-0', '2a01:4f8:1c17:5d0d::1'),
+     A('worker-1', '138.201.119.57'),
+  AAAA('worker-1', '2a01:4f8:1c17:619f::1'),
+     A('worker-2', '138.201.90.89'),
+  AAAA('worker-2', '2a01:4f8:1c17:5d4e::1')
+)
+
 
 // Domains hosted at Cyon without customizations
 var CYON_DOMAINS = [
@@ -53,7 +68,6 @@ for (d in CYON_DOMAINS) {
 // Domains not hosted at all
 var EMPTY_DOMAINS = [
   'dekoriert.ch',
-  'mhnet.ch',
   'mhnet.me',
   'sauknapp-party.ch'
 ]
