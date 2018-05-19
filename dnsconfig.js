@@ -45,7 +45,7 @@ D('mhnet.ch', REG_NONE, DnsProvider(GCLOUD),
      A('worker-1', '138.201.117.204'),
   AAAA('worker-1', '2a01:4f8:1c17:61a1::1'),
      A('worker-2', '138.201.90.89'),
-  AAAA('worker-2', '2a01:4f8:1c17:619f::1'),
+  AAAA('worker-2', '2a01:4f8:1c17:619f::1')
 )
 
 
