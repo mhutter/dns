@@ -20,6 +20,7 @@ var CYON = [
 // Custom Domains
 D('hutter.io', REG_NONE, DnsProvider(GCLOUD),
   CYON,
+  CNAME('appuio', 'cname.appuioapp.ch.'),
   A('s', CYON_IP)
 )
 
