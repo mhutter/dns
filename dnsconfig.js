@@ -21,6 +21,7 @@ var CYON = [
 D('hutter.io', REG_NONE, DnsProvider(GCLOUD),
   CYON,
   CNAME('appuio', 'cname.appuioapp.ch.'),
+  CNAME('*.app', 'os.mhnet.ch.'),
   A('s', CYON_IP)
 )
 
@@ -34,6 +35,8 @@ D('izibizi.ch', REG_NONE, DnsProvider(GCLOUD),
 )
 
 D('mhnet.ch', REG_NONE, DnsProvider(GCLOUD),
+     A('os', '138.201.191.253'),
+  AAAA('os', '2a01:4f8:1c17:6054::1'),
      A('controller-0', '138.201.184.11'),
   AAAA('controller-0', '2a01:4f8:1c17:5d4e::1'),
      A('controller-1', '138.201.186.248'),
