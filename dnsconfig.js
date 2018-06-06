@@ -22,6 +22,7 @@ D('hutter.io', REG_NONE, DnsProvider(GCLOUD),
   CYON,
   CNAME('appuio', 'cname.appuioapp.ch.'),
   CNAME('*.app', 'os.mhnet.ch.'),
+  CNAME('emaily', 'emaily.hutter.io.herokudns.com.'),
   A('s', CYON_IP)
 )
 
