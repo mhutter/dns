@@ -30,8 +30,8 @@ D('izibizi.ch', REG_NONE, DnsProvider(GCLOUD),
   CYON,
   A('alt', CYON_IP),
   A('s', CYON_IP),
-  A('test', CYON_IP),
-  A('www.test', CYON_IP),
+  CNAME('test', 'guggemusig-izi-bizi-tini-wini.jimdosite.com.'),
+  CNAME('www.test', 'guggemusig-izi-bizi-tini-wini.jimdosite.com.'),
   TXT('@', 'google-site-verification=eYM9ojHKqusz8D0WER2qcnMnqtuRTKg_J-9ePcDy_f4')
 )
 
