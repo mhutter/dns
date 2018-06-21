@@ -80,3 +80,6 @@ var EMPTY_DOMAINS = [
 for (d in EMPTY_DOMAINS) {
   D(EMPTY_DOMAINS[d], REG_NONE, DnsProvider(GCLOUD))
 }
+
+D('miraku.io', REG_NONE, DnsProvider(GCLOUD))
+D('miraku.me', REG_NONE, DnsProvider(GCLOUD))
