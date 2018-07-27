@@ -36,20 +36,8 @@ D('izibizi.ch', REG_NONE, DnsProvider(GCLOUD),
 )
 
 D('mhnet.ch', REG_NONE, DnsProvider(GCLOUD),
-     A('os', '138.201.191.253'),
-  AAAA('os', '2a01:4f8:1c17:6054::1'),
-     A('controller-0', '138.201.184.11'),
-  AAAA('controller-0', '2a01:4f8:1c17:5d4e::1'),
-     A('controller-1', '138.201.186.248'),
-  AAAA('controller-1', '2a01:4f8:1c17:5d7c::1'),
-     A('controller-2', '138.201.119.57'),
-  AAAA('controller-2', '2a01:4f8:1c17:61a0::1'),
-     A('worker-0', '78.46.185.177'),
-  AAAA('worker-0', '2a01:4f8:1c17:5d0d::1'),
-     A('worker-1', '138.201.117.204'),
-  AAAA('worker-1', '2a01:4f8:1c17:61a1::1'),
-     A('worker-2', '138.201.90.89'),
-  AAAA('worker-2', '2a01:4f8:1c17:619f::1')
+     A('rancher', '159.69.54.52'),
+  AAAA('rancher', '2a01:4f8:1c17:6d3c::1')
 )
 
 
