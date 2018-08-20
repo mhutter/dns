@@ -28,7 +28,7 @@ D('hutter.io', REG_NONE, DnsProvider(GCLOUD),
 
 D('izibizi.ch', REG_NONE, DnsProvider(GCLOUD),
   A('@', CYON_IP),
-  CNAME('www', 'guggemusig-izi-bizi-tini-wini.jimdosite.com.'),
+  CNAME('www', 'web.jimdosite.com.'),
   MX('@', 0, 'mail.izibizi.ch.'),
   TXT('@', 'v=spf1 +a +mx +ip4:194.126.200.0/24 +ip4:149.126.0.0/21 -all'),
   SRV('_autodiscover._tcp', 0, 0, 443, 'maildiscovery.cyon.ch.'),
