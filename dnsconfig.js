@@ -40,6 +40,8 @@ D('izibizi.ch', REG_NONE, DnsProvider(GCLOUD),
 )
 
 D('mhnet.ch', REG_NONE, DnsProvider(GCLOUD),
+     A('mc0', '159.69.119.114'),
+  AAAA('mc0', '2a01:4f8:c010:774::1'),
      A('rancher', '159.69.54.52'),
   AAAA('rancher', '2a01:4f8:1c17:6d3c::1')
 )
