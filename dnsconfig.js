@@ -22,7 +22,7 @@ D('hutter.io', REG_NONE, DnsProvider(GCLOUD),
   CYON,
   CNAME('appuio', 'cname.appuioapp.ch.'),
   CNAME('emaily', 'emaily.hutter.io.herokudns.com.'),
-  A('*.app', '159.69.124.50'),
+  A('*.app', '159.69.100.203'),
   A('s', CYON_IP)
 )
 
@@ -58,7 +58,7 @@ AAAA('node1.os', '2a01:4f8:c010:1051::1'),
    A('node2.os', '159.69.176.86'),
 AAAA('node2.os', '2a01:4f8:c010:1052::1'),
 
-     A('console', '159.69.124.101')
+     A('console', '159.69.100.202')
 )
 
 // Domains hosted at Cyon without customizations
