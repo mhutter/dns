@@ -82,7 +82,6 @@ for (d in CYON_DOMAINS) {
 // Domains not hosted at all
 var EMPTY_DOMAINS = [
   'dekoriert.ch',
-  'mhnet.me',
   'sauknapp-party.ch'
 ]
 
