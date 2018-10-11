@@ -44,7 +44,7 @@ D('mhnet.ch', REG_NONE, DnsProvider(GCLOUD),
      A('mc0', '159.69.119.114'),
   AAAA('mc0', '2a01:4f8:c010:774::1'),
      A('rancher', '159.69.177.21'),
-  AAAA('rancher', '2a01:4f8:c010:1327::1'),
+  AAAA('rancher', '2a01:4f8:c010:1327::1')
 )
 
 // Domains hosted at Cyon without customizations
