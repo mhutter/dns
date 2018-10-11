@@ -43,23 +43,8 @@ D('izibizi.ch', REG_NONE, DnsProvider(GCLOUD),
 D('mhnet.ch', REG_NONE, DnsProvider(GCLOUD),
      A('mc0', '159.69.119.114'),
   AAAA('mc0', '2a01:4f8:c010:774::1'),
-
-   A('infra.os', '159.69.176.84'),
-AAAA('infra.os', '2a01:4f8:c010:104f::1'),
-   A('master0.os', '159.69.124.101'),
-AAAA('master0.os', '2a01:4f8:c010:c62::1'),
-   A('master1.os', '159.69.124.50'),
-AAAA('master1.os', '2a01:4f8:c010:c80::1'),
-   A('master2.os', '159.69.124.44'),
-AAAA('master2.os', '2a01:4f8:c010:c2e::1'),
-   A('node0.os', '159.69.176.90'),
-AAAA('node0.os', '2a01:4f8:c010:1055::1'),
-   A('node1.os', '159.69.176.88'),
-AAAA('node1.os', '2a01:4f8:c010:1051::1'),
-   A('node2.os', '159.69.176.86'),
-AAAA('node2.os', '2a01:4f8:c010:1052::1'),
-
-     A('console', '159.69.100.202')
+     A('rancher', '159.69.177.21'),
+  AAAA('rancher', '2a01:4f8:c010:1327::1'),
 )
 
 // Domains hosted at Cyon without customizations
