@@ -34,7 +34,7 @@ D('izibizi.ch', REG_NONE, DnsProvider(GCLOUD),
   TXT('@', 'v=spf1 +a +mx +ip4:194.126.200.0/24 +ip4:149.126.0.0/21 -all'),
   SRV('_autodiscover._tcp', 0, 0, 443, 'maildiscovery.cyon.ch.'),
   CNAME('autoconfig', 'maildiscovery.cyon.ch.'),
-  CNAME('mail', '@'),
+  A('mail', CYON_IP),
   A('alt', CYON_IP),
   A('s', CYON_IP),
   TXT('@', 'google-site-verification=eYM9ojHKqusz8D0WER2qcnMnqtuRTKg_J-9ePcDy_f4')
