@@ -21,10 +21,10 @@ var CYON = [
 D('hutter.io', REG_NONE, DnsProvider(GCLOUD),
   CYON,
 
-  NS('openshift', 'ns-1410.awsdns-48.org.'),
-  NS('openshift', 'ns-776.awsdns-33.net.'),
-  NS('openshift', 'ns-1996.awsdns-57.co.uk.'),
-  NS('openshift', 'ns-363.awsdns-45.com.'),
+  NS('openshift', 'ns-1656.awsdns-15.co.uk.'),
+  NS('openshift', 'ns-1223.awsdns-24.org.'),
+  NS('openshift', 'ns-552.awsdns-05.net.'),
+  NS('openshift', 'ns-436.awsdns-54.com.'),
 
   CNAME('appuio', 'cname.appuioapp.ch.'),
   CNAME('emaily', 'emaily.hutter.io.herokudns.com.'),
