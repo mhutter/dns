@@ -1,5 +1,5 @@
 /* global NewRegistrar, NewDnsProvider, DnsProvider, D, A, AAAA, CNAME, SRV, MX,
-  TXT */
+ NS, TXT */
 
 // Registras, DNS providers
 var REG_NONE = NewRegistrar('none', 'NONE')
@@ -20,6 +20,12 @@ var CYON = [
 // Custom Domains
 D('hutter.io', REG_NONE, DnsProvider(GCLOUD),
   CYON,
+
+  NS('openshift', 'ns-1410.awsdns-48.org.'),
+  NS('openshift', 'ns-776.awsdns-33.net.'),
+  NS('openshift', 'ns-1996.awsdns-57.co.uk.'),
+  NS('openshift', 'ns-363.awsdns-45.com.'),
+
   CNAME('appuio', 'cname.appuioapp.ch.'),
   CNAME('emaily', 'emaily.hutter.io.herokudns.com.'),
   A('*.app', '159.69.100.203'),
