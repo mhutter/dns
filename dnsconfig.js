@@ -47,8 +47,8 @@ D('izibizi.ch', REG_NONE, DnsProvider(GCLOUD),
 )
 
 D('mhnet.ch', REG_NONE, DnsProvider(GCLOUD),
-     A('rancher', '116.202.0.227'),
-  AAAA('rancher', '2a01:4f8:c01f:27::1')
+     A('rancher', '116.202.24.24'),
+  AAAA('rancher', '2a01:4f8:c010:774::1')
 )
 
 // Domains hosted at Cyon without customizations
