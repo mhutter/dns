@@ -46,11 +46,6 @@ D('izibizi.ch', REG_NONE, DnsProvider(GCLOUD),
   TXT('@', 'google-site-verification=eYM9ojHKqusz8D0WER2qcnMnqtuRTKg_J-9ePcDy_f4')
 )
 
-D('mhnet.ch', REG_NONE, DnsProvider(GCLOUD),
-     A('rancher', '116.202.24.24'),
-  AAAA('rancher', '2a01:4f8:c010:774::1')
-)
-
 // Domains hosted at Cyon without customizations
 var CYON_DOMAINS = [
   'grosses-guggenfest.ch',
