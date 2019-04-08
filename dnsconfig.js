@@ -22,7 +22,11 @@ D('hutter.io', REG_NONE, DnsProvider(GCLOUD),
   CYON,
 
   CNAME('appuio', 'cname.appuioapp.ch.'),
-  A('s', CYON_IP)
+  A('s', CYON_IP),
+  NS('nf', 'dns1.p07.nsone.net.'),
+  NS('nf', 'dns2.p07.nsone.net.'),
+  NS('nf', 'dns3.p07.nsone.net.'),
+  NS('nf', 'dns4.p07.nsone.net.')
 )
 
 D('izibizi.ch', REG_NONE, DnsProvider(GCLOUD),
