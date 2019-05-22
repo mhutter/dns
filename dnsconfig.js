@@ -42,6 +42,12 @@ D('izibizi.ch', REG_NONE, DnsProvider(GCLOUD),
   TXT('@', 'google-site-verification=eYM9ojHKqusz8D0WER2qcnMnqtuRTKg_J-9ePcDy_f4')
 )
 
+D('mhu.dev', REG_NONE, DnsProvider(GCLOUD),
+  A('*.app', '159.69.187.33'),
+  A('*.app', '159.69.187.25'),
+  A('*.app', '159.69.187.136')
+)
+
 // Domains hosted at Cyon without customizations
 var CYON_DOMAINS = [
   'grosses-guggenfest.ch',
@@ -72,8 +78,7 @@ for (d in EMPTY_DOMAINS) {
 var GCLOUD_DOMAINS = [
   'miraku.io',
   'miraku.me',
-  'mhutter.dev',
-  'mhu.dev'
+  'mhutter.dev'
 ]
 for (d in GCLOUD_DOMAINS) {
   D(GCLOUD_DOMAINS[d], REG_NONE, DnsProvider(GCLOUD))
