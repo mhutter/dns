@@ -77,8 +77,7 @@ for (d in EMPTY_DOMAINS) {
 
 var GCLOUD_DOMAINS = [
   'miraku.io',
-  'miraku.me',
-  'mhutter.dev'
+  'miraku.me'
 ]
 for (d in GCLOUD_DOMAINS) {
   D(GCLOUD_DOMAINS[d], REG_NONE, DnsProvider(GCLOUD))
