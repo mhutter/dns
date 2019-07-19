@@ -33,14 +33,16 @@ D('izibizi.ch', REG_NONE, DnsProvider(GCLOUD),
   A('@', CYON_IP),
   CNAME('www', 'web.jimdosite.com.'),
   MX('@', 0, 'mail.izibizi.ch.'),
-  MX('cloud', 0, 'mail.izibizi.ch.'),
   TXT('@', 'v=spf1 +a +mx +ip4:194.126.200.0/24 +ip4:149.126.0.0/21 -all'),
   SRV('_autodiscover._tcp', 0, 0, 443, 'maildiscovery.cyon.ch.'),
   CNAME('autoconfig', 'maildiscovery.cyon.ch.'),
   A('mail', CYON_IP),
   A('alt', CYON_IP),
   A('s', CYON_IP),
-  TXT('@', 'google-site-verification=eYM9ojHKqusz8D0WER2qcnMnqtuRTKg_J-9ePcDy_f4')
+  TXT('@', 'google-site-verification=eYM9ojHKqusz8D0WER2qcnMnqtuRTKg_J-9ePcDy_f4'),
+
+  MX('cloud', 0, 'mail.izibizi.ch.'),
+  TXT('cloud', 'google-site-verification=HJYnwF5dE9KIeJ3-VY8MONfT5SGVjeQ7DJ2XDQ5sWgg')
 )
 
 D('mhu.dev', REG_NONE, DnsProvider(GCLOUD),
