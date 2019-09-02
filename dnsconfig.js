@@ -41,8 +41,11 @@ D('izibizi.ch', REG_NONE, DnsProvider(GCLOUD),
   A('s', CYON_IP),
   TXT('@', 'google-site-verification=eYM9ojHKqusz8D0WER2qcnMnqtuRTKg_J-9ePcDy_f4'),
 
+  // Google Cloud Services
   MX('cloud', 0, 'mail.izibizi.ch.'),
-  TXT('cloud', 'google-site-verification=HJYnwF5dE9KIeJ3-VY8MONfT5SGVjeQ7DJ2XDQ5sWgg')
+  TXT('cloud', 'google-site-verification=HJYnwF5dE9KIeJ3-VY8MONfT5SGVjeQ7DJ2XDQ5sWgg'),
+  TXT('api-staging', 'google-site-verification=-8DiIat1EGuFsyRs0c-M_Ceaygg2lFYEGzl9ah4NgJA'),
+  TXT('api', 'google-site-verification=anDSXv5jPZqguR4QGy-lHfwj2TFBz7ZVHhQWQ2PC4fM')
 )
 
 D('mhu.dev', REG_NONE, DnsProvider(GCLOUD),
