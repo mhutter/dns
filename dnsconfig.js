@@ -44,7 +44,18 @@ D('izibizi.ch', REG_NONE, DnsProvider(GCLOUD),
   // Google Cloud Services
   MX('cloud', 0, 'mail.izibizi.ch.'),
   TXT('cloud', 'google-site-verification=HJYnwF5dE9KIeJ3-VY8MONfT5SGVjeQ7DJ2XDQ5sWgg'),
+
   TXT('api-staging', 'google-site-verification=-8DiIat1EGuFsyRs0c-M_Ceaygg2lFYEGzl9ah4NgJA'),
+  A('api-staging', '216.239.32.21'),
+  A('api-staging', '216.239.34.21'),
+  A('api-staging', '216.239.36.21'),
+  A('api-staging', '216.239.38.21'),
+  AAAA('api-staging', '2001:4860:4802:32::15'),
+  AAAA('api-staging', '2001:4860:4802:34::15'),
+  AAAA('api-staging', '2001:4860:4802:36::15'),
+  AAAA('api-staging', '2001:4860:4802:38::15'),
+  CNAME('www.api-staging', 'ghs.googlehosted.com'),
+
   TXT('api', 'google-site-verification=anDSXv5jPZqguR4QGy-lHfwj2TFBz7ZVHhQWQ2PC4fM')
 )
 
