@@ -54,7 +54,7 @@ D('izibizi.ch', REG_NONE, DnsProvider(GCLOUD),
   AAAA('api-staging', '2001:4860:4802:34::15'),
   AAAA('api-staging', '2001:4860:4802:36::15'),
   AAAA('api-staging', '2001:4860:4802:38::15'),
-  CNAME('www.api-staging', 'ghs.googlehosted.com'),
+  CNAME('www.api-staging', 'ghs.googlehosted.com.'),
 
   TXT('api', 'google-site-verification=anDSXv5jPZqguR4QGy-lHfwj2TFBz7ZVHhQWQ2PC4fM')
 )
