@@ -91,11 +91,3 @@ var EMPTY_DOMAINS = [
 for (d in EMPTY_DOMAINS) {
   D(EMPTY_DOMAINS[d], REG_NONE, DnsProvider(GCLOUD))
 }
-
-var GCLOUD_DOMAINS = [
-  'miraku.io',
-  'miraku.me'
-]
-for (d in GCLOUD_DOMAINS) {
-  D(GCLOUD_DOMAINS[d], REG_NONE, DnsProvider(GCLOUD))
-}
