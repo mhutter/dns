@@ -60,7 +60,7 @@ D('izibizi.ch', REG_NONE, DnsProvider(GCLOUD),
 )
 
 D('mhu.dev', REG_NONE, DnsProvider(GCLOUD),
-  A('*.app', '78.47.19.6'),
+  A('*.app', '78.47.19.6')
 )
 
 // Domains hosted at Cyon without customizations
