@@ -43,13 +43,7 @@ D('izibizi.ch', REG_NONE, DnsProvider(GCLOUD),
 
   // Google Cloud Services
   MX('cloud', 0, 'mail.izibizi.ch.'),
-  TXT('cloud', 'google-site-verification=HJYnwF5dE9KIeJ3-VY8MONfT5SGVjeQ7DJ2XDQ5sWgg'),
-
-  CNAME('*.test', 'cname.app.mhu.dev.')
-)
-
-D('mhu.dev', REG_NONE, DnsProvider(GCLOUD),
-  A('*.app', '78.47.19.6')
+  TXT('cloud', 'google-site-verification=HJYnwF5dE9KIeJ3-VY8MONfT5SGVjeQ7DJ2XDQ5sWgg')
 )
 
 // Domains hosted at Cyon without customizations
