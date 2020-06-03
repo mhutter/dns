@@ -52,7 +52,6 @@ var CYON_DOMAINS = [
   'guggenfest.ch',
   'manuel-hutter.ch',
   'mhutter.ch',
-  'mhutter.net',
   'schlagdensenn.ch',
   'the-voice.cc',
   'wona.ch'
