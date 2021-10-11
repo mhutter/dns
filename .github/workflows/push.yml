@@ -7,7 +7,7 @@ on:
       - main
 
 jobs:
-  preview:
+  push:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
