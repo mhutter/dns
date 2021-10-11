@@ -1,0 +1,8 @@
+{
+  "cloudflare": {
+    "apitoken": "$CLOUDFLARE_APITOKEN"
+  },
+  "gandi": {
+    "apikey": "$GANDI_APIKEY"
+  }
+}
