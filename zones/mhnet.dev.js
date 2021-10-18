@@ -3,6 +3,7 @@ D('mhnet.dev', REG_GANDI, DnsProvider(CLOUDFLARE),
   CNAME('*', '@'),
 
   // Sendgrid
+  CNAME('em5597', 'u22452480.wl231.sendgrid.net.'),
   CNAME('s1._domainkey', 's1.domainkey.u22452480.wl231.sendgrid.net.'),
   CNAME('s2._domainkey', 's2.domainkey.u22452480.wl231.sendgrid.net.'),
 
