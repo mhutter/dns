@@ -1,3 +1,5 @@
+const MHU_IP = '168.119.153.20';
+
 D('mhnet.dev', REG_GANDI, DnsProvider(CLOUDFLARE),
   A('@', '85.195.254.187'),
   CNAME('*', '@'),
@@ -8,11 +10,11 @@ D('mhnet.dev', REG_GANDI, DnsProvider(CLOUDFLARE),
   CNAME('s2._domainkey', 's2.domainkey.u22452480.wl231.sendgrid.net.'),
 
   // mhu0.mhnet.dev
-  A('mhu0', '168.119.153.20', CF_PROXY_ON),
-  CNAME('prometheus', 'mhu0.mhnet.dev.', CF_PROXY_ON),
-  CNAME('registry', 'mhu0.mhnet.dev.', CF_PROXY_ON),
-  CNAME('s3', 'mhu0.mhnet.dev.', CF_PROXY_ON),
-  CNAME('s3-console', 'mhu0.mhnet.dev.', CF_PROXY_ON),
+  A('mhu0',       MHU_IP, CF_PROXY_ON),
+  A('prometheus', MHU_IP, CF_PROXY_ON),
+  A('registry',   MHU_IP, CF_PROXY_ON),
+  A('s3',         MHU_IP, CF_PROXY_OFF),
+  A('s3-console', MHU_IP, CF_PROXY_ON),
 
   CAA('@', 'issue', 'letsencrypt.org')
 );
