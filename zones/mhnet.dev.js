@@ -10,6 +10,7 @@ D('mhnet.dev', REG_GANDI, DnsProvider(CLOUDFLARE),
   // mhu0.mhnet.dev
   A('mhu0', '168.119.153.20', CF_PROXY_ON),
   CNAME('prometheus', 'mhu0.mhnet.dev.', CF_PROXY_ON),
+  CNAME('registry', 'mhu0.mhnet.dev.', CF_PROXY_ON),
   CNAME('s3', 'mhu0.mhnet.dev.', CF_PROXY_ON),
   CNAME('s3-console', 'mhu0.mhnet.dev.', CF_PROXY_ON),
 
