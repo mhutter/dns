@@ -1,4 +1,4 @@
-const MHU_IP = '168.119.153.20';
+var MHU_IP = '168.119.153.20';
 
 D('mhnet.dev', REG_GANDI, DnsProvider(CLOUDFLARE),
   A('@', '85.195.254.187'),
