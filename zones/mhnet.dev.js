@@ -16,7 +16,7 @@ D('mhnet.dev', REG_GANDI, DnsProvider(CLOUDFLARE),
   // Literate
   A('literate', '78.46.122.145'),
   AAAA('literate', '2a01:4f8:c17:57f7::1'),
-  CNAME('*.literate', 'literate.mhnet.dev'),
+  CNAME('*.literate', 'literate.mhnet.dev.'),
 
   // Sendgrid
   CNAME('em5597', 'u22452480.wl231.sendgrid.net.'),
