@@ -1,4 +1,5 @@
 var HOME = '85.195.254.110';
+var HOMEv6 = '2a02:168:81cd::ea02:aff2:567d:9bd9';
 var RASPUTIN_APPS = [
   'minio',
   'objects',
@@ -12,6 +13,9 @@ D('mhnet.dev', REG_GANDI, DnsProvider(CLOUDFLARE),
   // Rasputin
   RASPUTIN_APPS.map(function(e) {
     return A(e, HOME, CF_PROXY_ON)
+  }),
+  RASPUTIN_APPS.map(function(e) {
+    return AAAA(e, HOMEv6, CF_PROXY_ON)
   }),
 
   // Literate
