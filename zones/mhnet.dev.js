@@ -18,6 +18,12 @@ D('mhnet.dev', REG_GANDI, DnsProvider(CLOUDFLARE),
   A('literate', LITERATE_IP),
   A('*.literate', LITERATE_IP),
 
+  // Lean
+  A('lean', '142.132.236.208'),
+  A('*.lean', '142.132.236.208'),
+  AAAA('lean', '2a01:4f8:c010:4bf9::1'),
+  AAAA('*.lean', '2a01:4f8:c010:4bf9::1'),
+
   // Sendgrid
   CNAME('em5597', 'u22452480.wl231.sendgrid.net.'),
   CNAME('s1._domainkey', 's1.domainkey.u22452480.wl231.sendgrid.net.'),
