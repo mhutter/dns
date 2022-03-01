@@ -7,7 +7,6 @@ var RASPUTIN_APPS = [
   'transmission',
   'vaultwarden',
 ];
-var LITERATE_IP = '78.46.122.145';
 
 D('mhnet.dev', REG_GANDI, DnsProvider(CLOUDFLARE),
   // Rasputin
@@ -17,10 +16,6 @@ D('mhnet.dev', REG_GANDI, DnsProvider(CLOUDFLARE),
   RASPUTIN_APPS.map(function(e) {
     return AAAA(e, HOMEv6, CF_PROXY_ON)
   }),
-
-  // Literate
-  A('literate', LITERATE_IP),
-  A('*.literate', LITERATE_IP),
 
   // Lean
   A('lean', '142.132.236.208'),
