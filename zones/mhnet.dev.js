@@ -10,10 +10,10 @@ var RASPUTIN_APPS = [
 
 D('mhnet.dev', REG_GANDI, DnsProvider(CLOUDFLARE),
   // Rasputin
-  RASPUTIN_APPS.map(function(e) {
+  RASPUTIN_APPS.map(function (e) {
     return A(e, HOME, CF_PROXY_ON)
   }),
-  RASPUTIN_APPS.map(function(e) {
+  RASPUTIN_APPS.map(function (e) {
     return AAAA(e, HOMEv6, CF_PROXY_ON)
   }),
 
@@ -32,6 +32,9 @@ D('mhnet.dev', REG_GANDI, DnsProvider(CLOUDFLARE),
   TXT('_dmarc', 'v=DMARC1; p=reject; sp=reject; adkim=s; aspf=s;'),
   TXT('*._domainkey', 'v=DKIM1; p='),
   TXT('@', 'v=spf1 -all'),
+
+  // Brave
+  TXT('@', 'brave-ledger-verification=fb5ecd721d4136a9297c556f54d63a86efacc56400454065f25050c3a647558d'),
 
   // CAA
   CAA('@', 'issue', 'letsencrypt.org')
