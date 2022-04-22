@@ -33,9 +33,6 @@ D('mhnet.dev', REG_GANDI, DnsProvider(CLOUDFLARE),
   TXT('*._domainkey', 'v=DKIM1; p='),
   TXT('@', 'v=spf1 -all'),
 
-  // Brave
-  TXT('@', 'brave-ledger-verification=fb5ecd721d4136a9297c556f54d63a86efacc56400454065f25050c3a647558d'),
-
   // CAA
   CAA('@', 'issue', 'letsencrypt.org')
 );
