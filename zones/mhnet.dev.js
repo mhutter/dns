@@ -23,6 +23,10 @@ D('mhnet.dev', REG_GANDI, DnsProvider(CLOUDFLARE),
   AAAA('lean', '2a01:4f8:c010:4bf9::1'),
   AAAA('*.lean', '2a01:4f8:c010:4bf9::1'),
 
+  // GitLab
+  A('gitlab', '188.34.154.175'),
+  AAAA('gitlab', '2a01:4f8:c012:e783::1'),
+
   // Sendgrid
   CNAME('em5597', 'u22452480.wl231.sendgrid.net.'),
   CNAME('s1._domainkey', 's1.domainkey.u22452480.wl231.sendgrid.net.'),
