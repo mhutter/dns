@@ -23,6 +23,12 @@ D('mhnet.dev', REG_GANDI, DnsProvider(CLOUDFLARE),
   AAAA('lean', '2a01:4f8:c010:4bf9::1'),
   AAAA('*.lean', '2a01:4f8:c010:4bf9::1'),
 
+  // Teleport
+  A('teleport', '23.88.119.186'),
+  A('*.teleport', '23.88.119.186'),
+  AAAA('teleport', '2a01:4f8:c012:ffbe::1'),
+  AAAA('*.teleport', '2a01:4f8:c012:ffbe::1'),
+
   // Sendgrid
   CNAME('em5597', 'u22452480.wl231.sendgrid.net.'),
   CNAME('s1._domainkey', 's1.domainkey.u22452480.wl231.sendgrid.net.'),
