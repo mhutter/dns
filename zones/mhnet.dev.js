@@ -1,4 +1,4 @@
-var HOME = '85.195.254.110';
+var HOME = '85.195.254.189';
 var HOMEv6 = '2a02:168:81cd::ea02:aff2:567d:9bd9';
 var RASPUTIN_APPS = [
   'minio',
