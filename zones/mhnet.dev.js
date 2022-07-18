@@ -4,6 +4,7 @@ var RASPUTIN_APPS = [
   'objects',
   'registry',
   'transmission',
+  'vault',
   'vaultwarden',
 ];
 
