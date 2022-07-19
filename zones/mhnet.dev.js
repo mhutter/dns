@@ -14,6 +14,10 @@ D('mhnet.dev', REG_GANDI, DnsProvider(CLOUDFLARE),
     return AAAA(e, HOMEv6, CF_PROXY_ON)
   }),
 
+  // NIM
+  A('nim', '176.9.1.16'),
+  AAAA('nim', '2a01:4f8:141:30f4::1'),
+
   // Lean
   A('lean', '142.132.236.208'),
   A('*.lean', '142.132.236.208'),
