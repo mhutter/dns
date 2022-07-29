@@ -17,8 +17,8 @@ D('mhnet.dev', REG_GANDI, DnsProvider(CLOUDFLARE),
   // NIM
   A('nim', '176.9.1.16'),
   A('*.nim', '176.9.1.16'),
-  AAAA('nim', '2a01:4f8:141:30f4::1'),
-  AAAA('*.nim', '2a01:4f8:141:30f4::1'),
+  AAAA('nim', '2a01:4f8:141:30f4::2'),
+  AAAA('*.nim', '2a01:4f8:141:30f4::2'),
 
   // Lean
   A('lean', '142.132.236.208'),
