@@ -14,12 +14,6 @@ D('mhnet.dev', REG_GANDI, DnsProvider(CLOUDFLARE),
     return AAAA(e, HOMEv6, CF_PROXY_ON)
   }),
 
-  // NIM
-  A('nim', '176.9.1.16'),
-  A('*.nim', '176.9.1.16'),
-  AAAA('nim', '2a01:4f8:141:30f4::2'),
-  AAAA('*.nim', '2a01:4f8:141:30f4::2'),
-
   // Sendgrid
   CNAME('em5597', 'u22452480.wl231.sendgrid.net.'),
   CNAME('s1._domainkey', 's1.domainkey.u22452480.wl231.sendgrid.net.'),
