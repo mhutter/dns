@@ -5,7 +5,6 @@ var RASPUTIN_APPS = [
   'registry',
   'transmission',
   'vault',
-  'vaultwarden',
 ];
 
 D('mhnet.dev', REG_GANDI, DnsProvider(CLOUDFLARE),
@@ -13,6 +12,9 @@ D('mhnet.dev', REG_GANDI, DnsProvider(CLOUDFLARE),
   RASPUTIN_APPS.map(function (e) {
     return AAAA(e, HOMEv6, CF_PROXY_ON)
   }),
+
+  // Vaultwarden
+  CNAME('vaultwarden', 'cname.cloudscale-lpg-2.appuio.cloud.', CF_PROXY_ON),
 
   // Sendgrid
   CNAME('em5597', 'u22452480.wl231.sendgrid.net.'),
