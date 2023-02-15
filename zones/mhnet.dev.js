@@ -14,7 +14,7 @@ D('mhnet.dev', REG_GANDI, DnsProvider(CLOUDFLARE),
   }),
 
   // Vaultwarden
-  CNAME('vaultwarden', 'cname.cloudscale-lpg-2.appuio.cloud.', CF_PROXY_ON),
+  CNAME('vaultwarden', 'cname.cloudscale-lpg-2.appuio.cloud.'),
 
   // Sendgrid
   CNAME('em5597', 'u22452480.wl231.sendgrid.net.'),
