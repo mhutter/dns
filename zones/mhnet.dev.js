@@ -1,18 +1,4 @@
-var HOMEv6 = '2a02:168:81cd::ea02:aff2:567d:9bd9';
-var RASPUTIN_APPS = [
-  'minio',
-  'objects',
-  'registry',
-  'transmission',
-  'vault',
-];
-
 D('mhnet.dev', REG_GANDI, DnsProvider(CLOUDFLARE),
-  // Rasputin
-  RASPUTIN_APPS.map(function (e) {
-    return AAAA(e, HOMEv6, CF_PROXY_ON)
-  }),
-
   // Vaultwarden
   CNAME('vaultwarden', 'cname.cloudscale-lpg-2.appuio.cloud.'),
 
