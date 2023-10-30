@@ -1,4 +1,8 @@
 D('mhnet.dev', REG_GANDI, DnsProvider(CLOUDFLARE),
+  // K3s cluster
+  A('*', '142.132.241.164', CF_PROXY_OFF),
+  AAAA('*', '2a01:4f8:c01e:373::1', CF_PROXY_OFF),
+
   // Vaultwarden
   CNAME('vaultwarden', 'cname.cloudscale-lpg-2.appuio.cloud.'),
 
