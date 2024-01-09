@@ -1,10 +1,8 @@
 // Providers
-var REG_GANDI = NewRegistrar('gandi');
-var CLOUDFLARE = NewDnsProvider('cloudflare', { 'manage_redirects': true });
-
 var REG_NONE = NewRegistrar('none');
 var DNS_CF = NewDnsProvider('cloudflare', {'manage_redirects': true});
 DEFAULTS(
+  DnsProvider(DNS_CF),
   CF_PROXY_DEFAULT_OFF
 );
 

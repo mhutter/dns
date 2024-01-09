@@ -1,4 +1,4 @@
-D('izibizi.ch', REG_GANDI, DnsProvider(CLOUDFLARE),
+D('izibizi.ch', REG_NONE,
   ALIAS('@', 'web.jimdosite.com.', CF_PROXY_ON),
   CNAME('www', 'web.jimdosite.com.'),
 

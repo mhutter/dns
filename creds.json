@@ -2,9 +2,5 @@
   "cloudflare": {
     "TYPE": "CLOUDFLAREAPI",
     "apitoken": "$CLOUDFLARE_APITOKEN"
-  },
-  "gandi": {
-    "TYPE": "GANDI_V5",
-    "apikey": "$GANDI_APIKEY"
   }
 }

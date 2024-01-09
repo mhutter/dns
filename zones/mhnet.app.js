@@ -1,4 +1,4 @@
-D('mhnet.app', REG_NONE, DnsProvider(DNS_CF),
+D('mhnet.app', REG_NONE,
   A('*', RHEA_A),
   AAAA('*', RHEA_AAAA),
 
