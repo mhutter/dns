@@ -1,7 +1,6 @@
 // Providers
-var REG_GANDI = NewRegistrar('gandi', 'GANDI_V5');
-var CLOUDFLARE = NewDnsProvider('cloudflare', 'CLOUDFLAREAPI',
-  { 'manage_redirects': true });
+var REG_GANDI = NewRegistrar('gandi');
+var CLOUDFLARE = NewDnsProvider('cloudflare', { 'manage_redirects': true });
 
 // Templates
 var GANDI_MX = [
