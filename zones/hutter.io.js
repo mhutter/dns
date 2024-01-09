@@ -1,4 +1,4 @@
-D('hutter.io', REG_GANDI, DnsProvider(CLOUDFLARE),
+D('hutter.io', REG_NONE,
   ALIAS('@', 'mhu-dev.pages.dev.', CF_PROXY_ON),
   CNAME('www', '@', CF_PROXY_ON),
 

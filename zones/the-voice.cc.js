@@ -1,4 +1,4 @@
-D('the-voice.cc', REG_GANDI, DnsProvider(CLOUDFLARE),
+D('the-voice.cc', REG_NONE,
   ALIAS('@', 'the-voice.pages.dev.', CF_PROXY_ON),
   CNAME('www', '@', CF_PROXY_ON),
 
