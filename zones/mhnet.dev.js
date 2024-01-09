@@ -3,6 +3,10 @@ D('mhnet.dev', REG_GANDI, DnsProvider(CLOUDFLARE),
   A('*', '142.132.241.164', CF_PROXY_OFF),
   AAAA('*', '2a01:4f8:c01e:373::1', CF_PROXY_OFF),
 
+  // Rhea
+  A('rhea', '116.202.233.38'),
+  AAAA('rhea', '2a01:4f8:241:4c27::1'),
+
   // Vaultwarden
   CNAME('vaultwarden', 'cname.cloudscale-lpg-2.appuio.cloud.'),
 
