@@ -1,13 +1,12 @@
 DNS config
 ==========
 
-Powered by DNSControl: https://stackexchange.github.io/dnscontrol/
+Powered by DNSControl: https://dnscontrol.org/
 
 Documentation
 -------------
 
-Language Reference: https://stackexchange.github.io/dnscontrol/js
+Language Reference: https://docs.dnscontrol.org/language-reference/js
 
 Providers:
-  Cloudflare: https://stackexchange.github.io/dnscontrol/providers/cloudflare
-  Gandi: https://stackexchange.github.io/dnscontrol/providers/gandi_v5
+  Cloudflare: https://docs.dnscontrol.org/service-providers/providers/cloudflareapi
