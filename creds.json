@@ -1,4 +1,9 @@
 {
+  "porkbun": {
+    "TYPE": "PORKBUN",
+    "api_key": "$PORKBUN_API_KEY",
+    "secret_key": "$PORKBUN_SECRET_KEY"
+  },
   "cloudflare": {
     "TYPE": "CLOUDFLAREAPI",
     "apitoken": "$CLOUDFLARE_APITOKEN"

@@ -1,6 +1,7 @@
 // Providers
 var REG_NONE = NewRegistrar('none');
 var DNS_CF = NewDnsProvider('cloudflare', {'manage_redirects': true});
+var DNS_PB = NewDnsProvider("porkbun");
 DEFAULTS(
   DnsProvider(DNS_CF),
   CF_PROXY_DEFAULT_OFF
