@@ -1,0 +1,6 @@
+tabWidth = 2
+singleQuote = true
+
+# DNSControl specifics
+trailingComma = "none"
+singleAttributePerLine = false

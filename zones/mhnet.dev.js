@@ -1,21 +1,17 @@
-D('mhnet.dev', REG_NONE,
-  // Rhea
+D(
+  'mhnet.dev',
+  REG_PORKBUN,
+  DnsProvider(DNS_PORKBUN),
+
+  // Presets
+  SENDGRID('em5597'),
+
   A('rhea', RHEA_A),
   AAAA('rhea', RHEA_AAAA),
 
-  // Testing
-  CNAME('appuio', 'cname.cloudscale-lpg-2.appuio.cloud.'),
+  // k3s LB
+  A('*', '49.12.21.173'),
+  AAAA('*', '2a01:4f8:c01e:2b8::1'),
 
-  // Sendgrid
-  CNAME('em5597', 'u22452480.wl231.sendgrid.net.'),
-  CNAME('s1._domainkey', 's1.domainkey.u22452480.wl231.sendgrid.net.'),
-  CNAME('s2._domainkey', 's2.domainkey.u22452480.wl231.sendgrid.net.'),
-
-  // Mail
-  TXT('_dmarc', 'v=DMARC1; p=reject; sp=reject; adkim=s; aspf=s;'),
-  TXT('*._domainkey', 'v=DKIM1; p='),
-  TXT('@', 'v=spf1 -all'),
-
-  // CAA
-  CAA('@', 'issue', 'letsencrypt.org')
+  END
 );

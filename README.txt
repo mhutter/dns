@@ -9,4 +9,5 @@ Documentation
 Language Reference: https://docs.dnscontrol.org/language-reference/js
 
 Providers:
-  Cloudflare: https://docs.dnscontrol.org/service-providers/providers/cloudflareapi
+  Cloudflare: https://docs.dnscontrol.org/provider/cloudflareapi
+  Porkbun: https://docs.dnscontrol.org/provider/porkbun

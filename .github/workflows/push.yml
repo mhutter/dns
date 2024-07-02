@@ -10,12 +10,14 @@ jobs:
   push:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: DNSControl push
-        uses: koenrh/dnscontrol-action@v3
+        uses: wblondel/dnscontrol-action@v4.11
+        id: dnscontrol_preview
         env:
           CLOUDFLARE_APITOKEN: ${{ secrets.CLOUDFLARE_APITOKEN }}
-          GANDI_APIKEY: ${{ secrets.GANDI_APIKEY }}
+          PORKBUN_API_KEY: ${{ secrets.PORKBUN_API_KEY }}
+          PORKBUN_SECRET_KEY: ${{ secrets.PORKBUN_SECRET_KEY }}
         with:
           args: push
