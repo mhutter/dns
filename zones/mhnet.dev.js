@@ -10,8 +10,7 @@ D(
   AAAA('rhea', RHEA_AAAA),
 
   // k3s LB
-  A('*', '49.12.21.173'),
-  AAAA('*', '2a01:4f8:c01e:2b8::1'),
+  K3S('*'),
 
   END
 );
