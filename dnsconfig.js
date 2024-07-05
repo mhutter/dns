@@ -7,9 +7,6 @@ var DNS_CLOUDFLARE = NewDnsProvider('cloudflare', { manage_redirects: true });
 var DNS_PORKBUN = NewDnsProvider('porkbun');
 
 // Helpers
-var RHEA_A = '116.202.233.38';
-var RHEA_AAAA = '2a01:4f8:241:4c27::1';
-
 function K3S(host) {
   return [A(host, '49.12.21.173'), AAAA(host, '2a01:4f8:c01e:2b8::1')];
 }
