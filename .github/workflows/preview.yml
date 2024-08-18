@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: DNSControl preview
-        uses: wblondel/dnscontrol-action@v4.12
+        uses: wblondel/dnscontrol-action@v4
         id: dnscontrol_preview
         env:
           CLOUDFLARE_APITOKEN: ${{ secrets.CLOUDFLARE_APITOKEN }}
