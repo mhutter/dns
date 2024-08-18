@@ -13,8 +13,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: DNSControl push
-        uses: wblondel/dnscontrol-action@v4.12
-        id: dnscontrol_preview
+        uses: wblondel/dnscontrol-action@v4
         env:
           CLOUDFLARE_APITOKEN: ${{ secrets.CLOUDFLARE_APITOKEN }}
           PORKBUN_API_KEY: ${{ secrets.PORKBUN_API_KEY }}
