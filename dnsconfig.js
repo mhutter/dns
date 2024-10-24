@@ -10,6 +10,9 @@ var DNS_PORKBUN = NewDnsProvider('porkbun');
 function K3S(host) {
   return [A(host, '49.12.21.173'), AAAA(host, '2a01:4f8:c01e:2b8::1')];
 }
+function RHEA(host) {
+  return [A(host, '116.202.233.38'), AAAA(host, '2a01:4f8:241:4c27::1')];
+}
 
 function PROTONMAIL(verification, domainkey) {
   return [
