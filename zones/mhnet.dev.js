@@ -6,10 +6,7 @@ D(
   // Presets
   SENDGRID('em5597'),
 
-  RHEA('rhea'),
-  RHEA('*.rhea'),
-
-  K3S('*'),
+  RHEA('*'),
 
   END
 );

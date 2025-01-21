@@ -7,9 +7,6 @@ var DNS_CLOUDFLARE = NewDnsProvider('cloudflare', { manage_redirects: true });
 var DNS_PORKBUN = NewDnsProvider('porkbun');
 
 // Helpers
-function K3S(host) {
-  return [A(host, '49.12.21.173'), AAAA(host, '2a01:4f8:c01e:2b8::1')];
-}
 function RHEA(host) {
   return [A(host, '116.202.233.38'), AAAA(host, '2a01:4f8:241:4c27::1')];
 }
@@ -55,10 +52,7 @@ function SENDGRID(domain) {
 
     // DKIM
     CNAME('s1._domainkey', 's1.domainkey.u22452480.wl231.sendgrid.net.'),
-    CNAME('s2._domainkey', 's2.domainkey.u22452480.wl231.sendgrid.net.'),
-
-    // DMARC
-    TXT('_dmarc', 'v=DMARC1; p=quarantine;')
+    CNAME('s2._domainkey', 's2.domainkey.u22452480.wl231.sendgrid.net.')
   ];
 }
 
