@@ -9,15 +9,28 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: DNSControl preview
-        uses: wblondel/dnscontrol-action@v4
+      - name: Install Nix
+        uses: cachix/install-nix-action@v18
+        with:
+          extra_nix_config: |
+            access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
+
+      - uses: workflow/nix-shell-action@v3.4.0
         id: dnscontrol_preview
         env:
           CLOUDFLARE_APITOKEN: ${{ secrets.CLOUDFLARE_APITOKEN }}
           PORKBUN_API_KEY: ${{ secrets.PORKBUN_API_KEY }}
           PORKBUN_SECRET_KEY: ${{ secrets.PORKBUN_SECRET_KEY }}
         with:
-          args: preview
+          flakes-from-devshell: true
+          script: |
+            out="$(dnscontrol preview)"
+            echo "$out"
+            {
+              echo 'preview_comment<<EOF'
+              echo "$out"
+              echo EOF
+            } >> "$GITHUB_OUTPUT"
 
       - name: Preview pull request comment
         uses: unsplash/comment-on-pr@master
