@@ -7,6 +7,7 @@ D(
   SENDGRID('em6609'),
 
   RHEA('*'),
+  CAA('@', 'issue', 'letsencrypt.org'),
 
   // Resend
   MX('send', 10, 'feedback-smtp.us-east-1.amazonses.com.'),
