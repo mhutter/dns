@@ -7,6 +7,7 @@ D(
   SENDGRID('em5597'),
 
   RHEA('*'),
+  CAA('@', 'issue', 'letsencrypt.org'),
 
   END
 );
