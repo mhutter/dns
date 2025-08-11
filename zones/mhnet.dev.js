@@ -9,5 +9,8 @@ D(
   RHEA('*'),
   CAA('@', 'issue', 'letsencrypt.org'),
 
+  A('bastion', '188.245.54.29'),
+  A('nix-cache', '10.13.37.100'),
+
   END
 );
