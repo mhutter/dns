@@ -1,6 +1,6 @@
 D(
   'hutter.io',
-  REG_PORKBUN,
+  REG_NONE,
   DnsProvider(DNS_PORKBUN),
 
   // Mail
