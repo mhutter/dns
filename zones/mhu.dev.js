@@ -6,6 +6,11 @@ D(
   ALIAS('@', 'mhu-dev.pages.dev.', CF_PROXY_ON),
   CNAME('www', '@', CF_PROXY_ON),
 
+  A('l', '127.0.0.1'),
+  A('*.l', '127.0.0.1'),
+  AAAA('l', '::1'),
+  AAAA('*.l', '::1'),
+
   // Verifications
   TXT(
     '@',
