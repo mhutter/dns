@@ -3,7 +3,9 @@ var REG_NONE = NewRegistrar('none');
 var REG_PORKBUN = NewRegistrar('porkbun');
 
 // DNS providers
-var DNS_CLOUDFLARE = NewDnsProvider('cloudflare', { manage_redirects: true });
+var DNS_CLOUDFLARE = NewDnsProvider('cloudflare', {
+  manage_single_redirects: true
+});
 var DNS_PORKBUN = NewDnsProvider('porkbun');
 
 // Helpers
