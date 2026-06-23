@@ -42,18 +42,4 @@ function PROTONMAIL(verification, domainkey) {
   ];
 }
 
-function SENDGRID(domain) {
-  return [
-    // Verification
-    CNAME(domain, 'u22452480.wl231.sendgrid.net.'),
-
-    // SPF
-    TXT('@', 'v=spf1 include:sendgrid.net -all'),
-
-    // DKIM
-    CNAME('s1._domainkey', 's1.domainkey.u22452480.wl231.sendgrid.net.'),
-    CNAME('s2._domainkey', 's2.domainkey.u22452480.wl231.sendgrid.net.')
-  ];
-}
-
 require_glob('./zones/');

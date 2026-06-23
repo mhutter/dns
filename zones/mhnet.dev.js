@@ -3,8 +3,10 @@ D(
   REG_PORKBUN,
   DnsProvider(DNS_PORKBUN),
 
-  // Presets
-  SENDGRID('em5597'),
+  // EMail
+  MX('@', 10, 'fwd1.porkbun.com.'),
+  MX('@', 20, 'fwd2.porkbun.com.'),
+  TXT('@', 'v=spf1 include:_spf.porkbun.com -all'),
 
   RHEA('*'),
   CAA('@', 'issue', 'letsencrypt.org'),
