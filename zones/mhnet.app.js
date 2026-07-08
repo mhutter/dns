@@ -1,7 +1,7 @@
 D(
   'mhnet.app',
   REG_PORKBUN,
-  DnsProvider(DNS_PORKBUN),
+  DnsProvider(DNS_CLOUDFLARE),
 
   RHEA('*'),
   CAA('@', 'issue', 'letsencrypt.org'),
